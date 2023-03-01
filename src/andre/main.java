@@ -4,10 +4,28 @@ public class main {
 
 	public static void main(String[] args) {
 		
-		printTopOrBottom(4);
-		printLeftAndRight(4,2);
-		printTopOrBottom(4);
+		printBox(4, 4);
+		printBox(8, 4);
+		printBox(5, 5);
+		
 	}
+
+	
+	public static void printBox(int width, int height) {
+		
+		if (width < 4 ) {
+			width = 4;
+		}
+		
+		if (height < 4 ) {
+			height = 4;
+		}
+		
+		printTopOrBottom(width);
+		printLeftAndRight(width,height - 2);
+		printTopOrBottom(width);
+	}
+
 
 	public static void printTopOrBottom(int size) {
 		
