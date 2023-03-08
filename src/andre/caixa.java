@@ -18,12 +18,14 @@ public class caixa {
         character = characterParam;
     }
 
-    public void print() {
+    public void print() throws Exception {
         if (width < 4) {
-            width = 4;
+            //width = 4;
+        	throw new Exception("Width cannot be less than 4");
         }
-        if (width < 4) {
-            width = 4;
+        if (height < 4) {
+            //height = 4;
+        	throw new Exception("Height cannot be less than 4");
         }
         printTopOrButtom(width);
         printLeftAndRight(width, height - 2);

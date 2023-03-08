@@ -1,14 +1,29 @@
 package andre;
 
+import java.util.Scanner;
+
 public class main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		
-		caixa caixa = new caixa(4,4, '/');
-        caixa.print();
+		Scanner in = new Scanner(System.in);
+		
+		System.out.println("Width");
+		int width = in.nextInt();
+		
+		System.out.println("Height");
+		int height = in.nextInt();
+		
+		
+		
+		caixa caixa = new caixa(width, height, '-');
         
-        caixa caixa2 = new caixa(6,6, '/');
-        caixa.print();
+		try {
+			caixa.print();			
+		} catch (Exception e) {
+			System.out.println("Ocorreu um erro ao desenhar a casa");
+			
+		}
         
 
 
