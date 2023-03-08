@@ -7,6 +7,9 @@ public class main {
 		caixa caixa = new caixa(4,4, '/');
         caixa.print();
         
+        caixa caixa2 = new caixa(6,6, '/');
+        caixa.print();
+        
 
 
     }
